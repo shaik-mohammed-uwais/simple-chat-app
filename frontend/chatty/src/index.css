@@ -1,0 +1,230 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+input {
+  padding: 10px;
+  font-size: medium;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 0.1;
+}
+
+form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+header {
+  border: 1px solid transparent;
+  border-color: #646cff;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 400px;
+  width: auto;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #59a985;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 10px;
+}
+
+.clear-chat {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e84a5f;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 10px;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.toggle-button {
+  background-color: #242424;
+  border-radius: 4rem;
+  padding: 0.4em 1em;
+}
+
+.toggle-button:hover {
+  border-color: none;
+}
+
+[data-theme="light"] {
+  background-color: #f7f7f7;
+  color: #2a363b;
+}
+
+[data-theme="light"] header {
+  background-color: #fff;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+[data-theme="light"] input {
+  background-color: #2a363b;
+}
+
+[data-theme="light"] button.toggle-button {
+  background-color: #fff;
+  color: #444;
+}
+.input-username {
+  padding: 0.2em;
+  width: 5em;
+  font-size: small;
+}
+@media (max-width: 1200px) {
+  /* Large screens: laptops and desktops */
+  h1 {
+    font-size: 2em;
+  }
+
+  header {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Medium screens: tablets */
+  body {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
+}
+@media (max-width: 768px) {
+  /* Small screens: tablets and phones */
+  header {
+    width: 80%;
+    min-height: 60vh; /* Taller box on smaller devices */
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  input {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button,
+  button[type="submit"] {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+  }
+  .clear-chat {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+  }
+
+  form {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small screens: phones */
+  header {
+    width: 80%;
+    min-height: 70vh; /* Taller box for phones */
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  input {
+    font-size: 0.85em;
+    padding: 6px;
+  }
+
+  button,
+  button[type="submit"] {
+    font-size: 0.8em;
+    padding: 0.3em 0.7em;
+  }
+  .clear-chat {
+    font-size: 0.85em;
+    padding: 0.3em 0.7em;
+  }
+  form {
+    padding: 5px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
