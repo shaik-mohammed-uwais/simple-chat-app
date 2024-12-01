@@ -13,11 +13,9 @@ const port = process.env.PORT || 5000;
 // const port = 5000;
 
 io.on("connection", (socket) => {
-  console.log("Socket connected:", socket);
   console.log("Socket is active");
 
   socket.on("chat", (payload) => {
-    console.log("Received payload:", payload);
     io.emit("chat", payload);
   });
 });
