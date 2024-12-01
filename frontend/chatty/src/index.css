@@ -196,7 +196,7 @@ button:focus-visible {
     padding: 8px;
   }
   .scrollable-div {
-    max-height: 600px;
+    max-height: 45vhpx;
   }
 }
 
