@@ -54,9 +54,10 @@ header {
   border: 1px solid transparent;
   border-color: #646cff;
   border-radius: 8px;
-  min-width: 300px;
+  min-width: 30vw;
+  min-height: 60vh;
   max-width: 400px;
-  width: auto;
+  /* width: auto; */
 }
 
 button {
@@ -71,6 +72,9 @@ button {
   transition: border-color 0.25s;
   margin: 10px;
 }
+.send-button {
+  flex: 1;
+}
 
 .clear-chat {
   border-radius: 8px;
@@ -83,6 +87,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 10px;
+  flex: 1;
 }
 
 button:hover {
@@ -127,6 +132,11 @@ button:focus-visible {
   width: 5em;
   font-size: small;
 }
+.buttons-contaier {
+  display: flex;
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   /* Large screens: laptops and desktops */
   h1 {
@@ -134,7 +144,9 @@ button:focus-visible {
   }
 
   header {
-    max-width: 600px;
+    width: 35vw;
+    min-height: 60vh;
+    /* max-width: 700px; */
   }
 }
 
@@ -156,8 +168,9 @@ button:focus-visible {
 @media (max-width: 768px) {
   /* Small screens: tablets and phones */
   header {
-    width: 80%;
-    min-height: 60vh; /* Taller box on smaller devices */
+    width: 80vw;
+    min-height: 70vh;
+    max-width: 350px; /* Taller box on smaller devices */
   }
 
   h1 {
@@ -182,13 +195,16 @@ button:focus-visible {
   form {
     padding: 8px;
   }
+  .scrollable-div {
+    max-height: 350px;
+  }
 }
 
 @media (max-width: 576px) {
   /* Extra small screens: phones */
   header {
-    width: 80%;
-    min-height: 70vh; /* Taller box for phones */
+    width: 80vw;
+    min-height: 75vh; /* Taller box for phones */
   }
 
   h1 {
@@ -211,6 +227,9 @@ button:focus-visible {
   }
   form {
     padding: 5px;
+  }
+  .scrollable-div {
+    max-height: 350px;
   }
 }
 

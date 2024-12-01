@@ -11,7 +11,7 @@
   width: fit-content;
 }
 .scrollable-div {
-  max-height: 150px;
+  max-height: 200px;
   overflow-y: auto;
   padding: 10px;
   text-align: right;
