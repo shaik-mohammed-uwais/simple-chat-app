@@ -115,7 +115,9 @@ function App() {
             >
               Clear
             </button>
-            <button type="submit">Send</button>
+            <button type="submit" className="send-button">
+              Send
+            </button>
           </div>
         </form>
       </header>
